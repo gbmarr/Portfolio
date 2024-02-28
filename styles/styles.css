@@ -1,0 +1,66 @@
+/* paleta de colores */
+:root{
+    --black: #000000ff;
+    --oxford-blue: #14213dff;
+    --orange-web: #fca311ff;
+    --platinum: #e5e5e5ff;
+    --white: #ffffffff;
+}
+
+/* how to use fonts: */
+/* font-family: "Teko", sans-serif; font-family: "Bebas Neue", sans-serif; */
+
+/* estilos generales de la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    font: 18px "Bebas Neue", sans-serif;
+    font-style: none;
+    text-decoration: none;
+    color: var(--platinum);
+    background-color: var(--black);
+}
+
+/* div del titulo y articulo */
+.title_div {
+    margin: 1em;
+} && .title_div h1 {
+    font-size: 3em;
+} && .title_div article {
+    font-size: 1.8em;
+    color: var(--orange-web);
+}
+
+/* barra de navegacion */
+.navbar {
+    margin: 1em;
+    border-bottom: 1px solid var(--platinum);
+}
+
+.navbar_list {
+    display: flex column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar_list li {
+    width: fit-content;
+    padding: .3em;
+}
+
+/* oculta/muestra la barra de navegacion */
+.oculto {
+    display: none;
+}
+
+/* boton de la barra de navegacion */
+.nav_boton {
+    cursor: pointer;
+    margin-left: 1em;
+    border: none;
+} && .nav_boton i {
+    font-size: 1.5rem;
+    color: var(--platinum);
+}
