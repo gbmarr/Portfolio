@@ -10,6 +10,8 @@
 /* how to use fonts: */
 /* font-family: "Teko", sans-serif; font-family: "Bebas Neue", sans-serif; */
 
+/* ESTILOS DE LOS ELEMENTOS HTML */
+
 /* estilos generales de la pagina */
 * {
     margin: 0;
@@ -17,19 +19,28 @@
     box-sizing: border-box;
     height: fit-content;
     font: 18px "Bebas Neue", sans-serif;
-    font-style: none;
     text-decoration: none;
     color: var(--platinum);
     background-color: var(--black);
 }
 
+/* titulos de las secciones */
+h2 {
+    margin: 1em;
+    font-size: 2em;
+}
+
+/* ESTILOS DE LAS CLASES APLICADAS */
+
 /* div del titulo y articulo */
 .title_div {
     margin: 1em;
-} && .title_div h1 {
+}
+.title_div h1 {
     font-size: 3em;
-} && .title_div article {
-    font-size: 1.8em;
+}
+.title_div article {
+    font-size: 2em;
     color: var(--orange-web);
 }
 
@@ -38,29 +49,40 @@
     margin: 1em;
     border-bottom: 1px solid var(--platinum);
 }
-
 .navbar_list {
     display: flex column;
     justify-content: space-around;
     list-style: none;
 }
-
-.navbar_list li {
+.navbar_list li{
     width: fit-content;
     padding: .3em;
 }
-
+.navbar_list li a {
+    font-size: 1.3em;
+}
 /* oculta/muestra la barra de navegacion */
 .oculto {
     display: none;
 }
-
 /* boton de la barra de navegacion */
 .nav_boton {
     cursor: pointer;
     margin-left: 1em;
     border: none;
-} && .nav_boton i {
-    font-size: 1.5rem;
-    color: var(--platinum);
+}
+.nav_boton i {
+    font-size: 1.5em;
+    color: var(--orange-web);
+}
+
+/* ESTILOS DE LAS PSEUDO CLASES APLICADAS A LOS ELEMENTOS */
+.nav_boton i:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+.navbar_list li a:hover {
+    color: var(--orange-web);
+    transition: all 1s ease;
 }

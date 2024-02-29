@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
     <!-- Titulo -->
     <title>Gabriel Marrero - Portfolio</title>
 </head>
@@ -22,10 +20,13 @@
             <h1>Gabriel Marrero</h1>
             <article>FullStack Developer | C# .NET</article>
         </div>
-        <button class="nav_boton">
+        <button class="nav_boton" id="btn_mostrarMenu">
             <i class="bx bx-menu"></i>
         </button>
-        <nav class="navbar oculto">
+        <button class="nav_boton oculto" id="btn_ocultarMenu">
+            <i class="bx bx-x"></i>
+        </button>
+        <nav class="navbar oculto" id="navigation_bar">
             <ul class="navbar_list">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#projects">Proyectos</a></li>
@@ -48,5 +49,7 @@
         </div>
     </main>
     <footer class="footer"></footer>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
