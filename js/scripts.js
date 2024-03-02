@@ -18,3 +18,18 @@ btnOcultar.addEventListener('click', ()=>{
     menu.classList.toggle("oculto");
     btnMostrar.classList.toggle("oculto");
 })
+
+// evento click para volver arriba
+const btnArriba = document.getElementById("btn_volverArriba");
+btnArriba.addEventListener('click', ()=> {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    btnArriba.classList.add("oculto");
+});
+
+// seteo del funcionamiento del boton "volver arriba" en relacion al scroll
+window.onscroll = ()=> {
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        btnArriba.classList.remove("oculto");
+    }
+};

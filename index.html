@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Titulo -->
@@ -18,7 +18,7 @@
     <header>
         <div class="title_div">
             <h1>Gabriel Marrero</h1>
-            <article>FullStack Developer | C# .NET</article>
+            <article>[ FullStack Developer | C# .NET ]</article>
         </div>
         <button class="nav_boton" id="btn_mostrarMenu">
             <i class="bx bx-menu"></i>
@@ -39,6 +39,9 @@
     <!-- Main -->
     <main>
         <div class="container">
+            <button id="btn_volverArriba" class="btn_arriba oculto">
+                <i class="bx bxs-chevrons-up"></i>
+            </button>
             <section id="home">
                 <h2>Bienvenido/a!</h2>
                 <div class="section_container home_container">
@@ -66,29 +69,33 @@
                 <div class="section_container skills_container">
                     <h3>Tecnologías</h3>
                     <div>
-                        <p class="skill">.NET FRAMEWORK</p>
                         <p class="skill">C#</p>
+                        <p class="skill">.NET FRAMEWORK</p>
                         <p class="skill">ASP.NET</p>
-                        <p class="skill">CSS</p>
                         <p class="skill">SQL SERVER</p>
+                        <p class="skill">CSS</p>
                         <p class="skill">Javascript</p>
                         <p class="skill">HTML</p>
                     </div>
                     <h3>Otras tecnologías:</h3>
                     <div>
-                        <span class="skill">Java</span>
-                        <span class="skill">React</span>
+                        <p class="skill">Java</p>
+                        <p class="skill">React</p>
                     </div>
                 </div>
             </section>
             <section id="aboutme">
                 <h2>Sobre mí</h2>
-                <div class="section_container aboutme_container"></div>
+                <div class="section_container aboutme_container">
+                        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio, obcaecati non deserunt labore natus dignissimos quas quos cumque molestias ab reprehenderit quibusdam quia maiores ullam voluptas a praesentium voluptatem!</article>
+                </div>
             </section>
             <section id="contact">
                 <h2>Contacto</h2>
                 <div class="section_container contact_container">
-                    
+                    <a class="contact_link" href="#"><i class='bx bxl-github'></i></a>
+                    <a class="contact_link" href="#"><i class='bx bxl-gmail' ></i></a>
+                    <a class="contact_link" href="#"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </section>
         </div>
