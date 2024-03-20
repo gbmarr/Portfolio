@@ -19,17 +19,19 @@ btnOcultar.addEventListener('click', ()=>{
     btnMostrar.classList.toggle("oculto");
 })
 
-// evento click para volver arriba
-const btnArriba = document.getElementById("btn_volverArriba");
-btnArriba.addEventListener('click', ()=> {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-    btnArriba.classList.add("oculto");
-});
 
-// seteo del funcionamiento del boton "volver arriba" en relacion al scroll
-window.onscroll = ()=> {
-    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        btnArriba.classList.remove("oculto");
+// creacion del objeto que almacena los proyectos
+class Project {
+    constructor(nombre, desc, img, url, tech) {
+        this.nombre = nombre;
+        this.desc = desc;
+        this.img = img;
+        this.url = url;
+        this.tech = tech;
     }
 };
+
+// funcion para agregar proyectos al objeto
+let appDesktop = new Project("Desktop App: Stock of Articles", "", "", "#", ["C#", ".NET FRAMEWORK", "SQL SERVER"]);
+let personalPortfolio = new Project("Personal Portfolio", "", "", "#", ["HTML", "CSS", "JavaScript"]);
+let passBlurry = new Project("Password Background Blurry", "", "", "#", ["HTML", "CSS", "JavaScript"]);
