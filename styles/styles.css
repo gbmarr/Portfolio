@@ -36,7 +36,7 @@ h2 {
 }
 
 /* ESTILOS DEL HEADER */
-.header_container {
+.header__container {
     background-color: var(--oxford-blue);
     padding: 1em 0;
     display: flex;
@@ -44,14 +44,14 @@ h2 {
     align-items: center;
 }
 
-.header_container_title {
+.header__container__title {
     background-color: transparent;
     display: flex;
     flex-direction: column;
     white-space: nowrap;
 }
 
-.header_title, .header_article, .header_container a {
+.header__title, .header__article, .header__container a {
     background-color: transparent;
     color: var(--orange-web);
 }
@@ -64,17 +64,57 @@ h2 {
     gap: 10px;
 }
 
-.section_hello article {
+.section__hello article {
     margin: 1em;
 }
 
-.section_hello_networks {
+.section__hello__networks {
     padding: 1em;
     border-bottom: 1px solid var(--orange-web);
 }
 
-.section_hello_networks ul {
+.section__hello__networks ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* ESTILOS DEL SECTION ABOUT ME */
+.section__aboutme article {
+    margin: 1em;
+}
+
+/* ESTILOS DEL SECTION SKILLS */
+.section__skills__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img__skill {
+    align-self: center;
+    margin: .5em;
+    padding: 1em;
+    width: 30%;
+}
+
+/* ESTILOS DEL SECTION FORMACION ACADEMICA */
+.academic__item {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: 1px solid var(--orange-web);
+}
+
+.academic__item img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+.academic__item__title {
+    font: 1.5em 'Rajdhani', sans-serif;
+}
+
+.academic__item__date {
+    font-style: italic;
 }
