@@ -107,6 +107,7 @@ h2 {
 }
 
 .academic__item img {
+    margin: .5em 0;
     width: 60%;
     border-radius: 4px;
 }
@@ -116,5 +117,17 @@ h2 {
 }
 
 .academic__item__date {
+    margin: .5em 0;
     font-style: italic;
+}
+
+.academic__item__link {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.academic__item__link img {
+    width: 20px;
 }
