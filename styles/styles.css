@@ -8,174 +8,73 @@
 }
 
 /* how to use fonts: */
-/* font-family: "Teko", sans-serif; font-family: "Raleway", sans-serif; */
+/*  font-family: "Teko", sans-serif;
+    font-family: "Raleway", sans-serif; */
 
 /* ESTILOS DE LOS ELEMENTOS HTML */
 
-/* estilos generales de la pagina */
+/* ESTILOS GENERALES DE LA PAGINA */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: fit-content;
-    font: 16px "Raleway", sans-serif;
+    font: 12px "Raleway", sans-serif;
     text-decoration: none;
-    color: var(--platinum);
-    background-color: var(--black);
+    color: var(--oxford-blue);
+    background-color: var(--platinum);
     scroll-behavior: smooth;
-}
-
-/* titulos de las secciones */
-h2 {
-    margin: .5em;
-    font: 2em "Teko", sans-serif;
-}
-
-h3 {
-    font: 1.5em "Teko", sans-serif;
-    color: var(--orange-web);
-}
-
-button {
-    border: none;
-}
-
-p {
-    color: var(--white);
-}
-
-i {
-    font-size: 1.2em;
-    color: var(--platinum);
-}
-
-/* ESTILOS DE LAS CLASES APLICADAS */
-
-/* div del titulo y articulo */
-.title_div {
-    margin: 1em;
-}
-.title_div h1 {
-    font: 3em "Teko", sans-serif;
-}
-.title_div article {
-    font: 2em "Teko", sans-serif;
-    color: var(--orange-web);
-}
-.section_container {
-    margin: 1em;
-    padding: 1em;
-}
-
-/* BARRA DE NAVEGACION */
-.navbar {
-    margin: 1em;
-    border-bottom: 1px solid var(--platinum);
-}
-.navbar_list {
-    display: flex column;
-    justify-content: space-around;
     list-style: none;
 }
-.navbar_list li{
-    width: fit-content;
-    padding: .3em;
-}
-.navbar_list li a {
-    font: 1.3em "Teko", sans-serif;
-}
-/* oculta/muestra la barra de navegacion */
-.oculto {
-    display: none;
-}
-/* boton de la barra de navegacion */
-.nav_boton {
-    cursor: pointer;
-    margin-left: 1em;
-    border: none;
-}
-.nav_boton i {
-    font-size: 1.5em;
-    color: var(--orange-web);
-}
-/* pseudo clases de la barra de navegacion */
-.nav_boton i:hover {
-    transform: scale(1.2);
-    transition: all 1s ease;
-}
-.navbar_list li a:hover {
-    color: var(--orange-web);
-    transition: all 1s ease;
+
+section {
+    padding: 2em;
 }
 
-/* HOME SECTION */
-.home_container {
-    border-bottom: 1px solid var(--platinum);
+h2 {
+    font: bold 1.5em 'Rajdhani', sans-serif;
 }
 
-/* PROJECTS SECTION */
-.projects_container {
+/* ESTILOS DEL HEADER */
+.header_container {
+    background-color: var(--oxford-blue);
+    padding: 1em 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.project_div {
-    padding: 1em;
-    width: 90%;
-    margin: auto 1em;
-    justify-content: space-around;
-    border: 1px solid var(--orange-web);
-    border-radius: 10px;
+.header_container_title {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
 }
 
-/* SKILLS SECTION */
-.skills_container {
-    padding: .5em;
-    margin: auto;
-    width: 80%;
+.header_title, .header_article, .header_container a {
+    background-color: transparent;
+    color: var(--orange-web);
+}
+
+/* ESTILOS DEL SECTION HELLO */
+.section__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.section_hello article {
+    margin: 1em;
+}
+
+.section_hello_networks {
+    padding: 1em;
     border-bottom: 1px solid var(--orange-web);
 }
 
-.skills_container>div {
-    margin: auto;
-    text-align: center;
-}
-
-.skill {
-    color: var(--platinum);
-    border: 1px solid var(--platinum);
-    border-radius: 5px;
-    display: inline-block;
-    padding: .3em;
-    margin: .5em;
-}
-
-.skill:hover {
-    color: var(--orange-web);
-    transition: all 1s ease;
-}
-
-/* ABOUT ME SECTION */
-.aboutme_container {
-    margin: auto;
-    width: 80%;
-    padding: 1em;
-    border-bottom: 1px solid var(--platinum);
-}
-
-/* CONTACT SECTION */
-.contact_container {
-    justify-content: space-between;
-    margin: auto;
-    text-align: center;
-    width: 90%;
-}
-
-.contact_link {
-    margin: 2em;
-}
-
-.contact_link > i {
-    font-size: 2em;
+.section_hello_networks ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

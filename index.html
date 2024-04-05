@@ -7,95 +7,47 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- Titulo -->
     <title>Gabriel Marrero - Portfolio</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="title_div">
-            <h1>Gabriel Marrero</h1>
-            <article>[ FullStack Developer | C# .NET ]</article>
+    <header class="header_container">
+        <!-- container del header mobile -->
+        <div class="header_container_title">
+            <h1 class="header_title">Gabriel Marrero - Portfolio</h1>
+            <article class="header_article">[ Fullstack Developer | C# .NET ]</article>
         </div>
-        <button class="nav_boton" id="btn_mostrarMenu">
-            <i class="bx bx-menu"></i>
-        </button>
-        <button class="nav_boton oculto" id="btn_ocultarMenu">
-            <i class="bx bx-x"></i>
-        </button>
-        <nav class="navbar oculto" id="navigation_bar">
-            <ul class="navbar_list">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#aboutme">Sobre mí</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <a href="">gab.bmar.05@gmail.com</a>
     </header>
     <!-- Main -->
-    <main>
-        <div class="container">
-            <section id="home">
-                <h2>Bienvenido/a!</h2>
-                <div class="section_container home_container">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum et laborum quam? Veritatis nesciunt itaque placeat doloribus cum neque, quod amet suscipit. Expedita eius atque aperiam odio autem quo!</p>
-                </div>
-            </section>
-            <section id="projects">
-                <h2>Proyectos</h2>
-                <div class="section_container projects_container">
-                    <button>
-                        <i class='bx bxs-chevrons-left'></i>
-                    </button>
-                    <div class="project_div">
-                        <h3>Desktop App</h3>
-                        <img src="" alt="">
-                        <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem temporibus mollitia pariatur nostrum sit. Aspernatur provident, quis quos atque repellat excepturi velit assumenda, magnam quia ipsam nemo quae alias dolor?</article>
-                    </div>
-                    <button>
-                        <i class="bx bxs-chevrons-right"></i>
-                    </button>
-                </div>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="section_container skills_container">
-                    <h3>Tecnologías</h3>
-                    <div>
-                        <p class="skill">C#</p>
-                        <p class="skill">.NET FRAMEWORK</p>
-                        <p class="skill">ASP.NET</p>
-                        <p class="skill">SQL SERVER</p>
-                        <p class="skill">CSS</p>
-                        <p class="skill">HTML</p>
-                    </div>
-                    <h3>Otras tecnologías:</h3>
-                    <div>
-                        <p class="skill">Javascript</p>
-                        <p class="skill">Java</p>
-                        <p class="skill">React</p>
-                    </div>
-                </div>
-            </section>
-            <section id="aboutme">
+    <main class="main_container">
+        <section class="section_hello">
+            <div class="section__title">
+                <h2>Hola, soy Gabriel Marrero, desarrollador de aplicaciones web</h2>
+                <img src="images/code_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <article>Formado en ASP.NET y C# en .NET FRAMEWORK. Actualmente, me encuentro realizando la Tecnicatura en Desarrollo de Aplicaciones Informáticas de UNICEN (Buenos Aires, Argentina).</article>
+            <article>Además, estoy participando en el proyecto Oracle ONE en Alura Latam.</article>
+            <div class="section_hello_networks">
+                <ul>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Currículum</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="secion_aboutme">
+            <div class="section__title">
                 <h2>Sobre mí</h2>
-                <div class="section_container aboutme_container">
-                        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio, obcaecati non deserunt labore natus dignissimos quas quos cumque molestias ab reprehenderit quibusdam quia maiores ullam voluptas a praesentium voluptatem!</article>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Contacto</h2>
-                <div class="section_container contact_container">
-                    <a class="contact_link" href="#"><i class='bx bxl-github'></i></a>
-                    <a class="contact_link" href="#"><i class='bx bxl-gmail' ></i></a>
-                    <a class="contact_link" href="#"><i class='bx bxl-linkedin'></i></a>
-                </div>
-            </section>
-        </div>
+                <img src="images/ar_on_you_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <article></article>
+        </section>
     </main>
     <footer class="footer"></footer>
     <!-- Scripts -->
