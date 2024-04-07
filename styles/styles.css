@@ -141,8 +141,8 @@ h2 {
 
 .work__item img {
     margin: auto .5em;
-    width: 90%;
-    border-radius: 4px;
+    width: 80%;
+    border-radius: 10px;
 }
 
 .work__item__title {
