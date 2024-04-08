@@ -79,6 +79,10 @@ h2 {
     align-items: center;
 }
 
+.section__hello__networks ul a {
+    font-weight: bold;
+}
+
 /* ESTILOS DEL SECTION ABOUT ME */
 .section__aboutme article {
     margin: 1em;
