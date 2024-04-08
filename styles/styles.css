@@ -56,6 +56,10 @@ h2 {
     color: var(--orange-web);
 }
 
+.navbar {
+    display: none;
+}
+
 /* ESTILOS DEL SECTION HELLO */
 .section__title {
     display: flex;
@@ -229,12 +233,37 @@ input:focus {
     color: var(--black);
     align-self: center;
     padding: .5em;
-    margin: 1em;
+    margin: 1em 2em;
     border-radius: 4px;
     border: none;
 }
 
+/* ESTILO DEL FOOTER */
+.footer {
+    background: linear-gradient(var(--oxford-blue), var(--black));
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.footer p {
+    background-color: transparent;
+    color: var(--platinum);
+    margin: auto .1em;
+}
+
+#footer__author {
+    color: var(--orange-web);
+    font-style: italic;
+}
+
 /* MEDIA QUERIES */
+@media (max-width: 330px) {
+    * {
+        font-size: 10px;
+    }
+}
+
 @media (min-width: 480px) {
     * {
         font-size: 16px;
@@ -242,6 +271,26 @@ input:focus {
 
     .img__skill {
         width: 20%;
+    }
+
+    .navbar {
+        display: block;
+    }
+    
+    .navbar ul {
+        background-color: var(--orange-web);
+        padding: 1em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar__item, .navbar > ul > li {
+        background-color: transparent;
+    }
+
+    .navbar__item {
+        font-style: italic;
+        font-weight: bold;
     }
 }
 
@@ -276,6 +325,10 @@ input:focus {
 @media (min-width: 1200px) {
     * {
         font-size: 24px;
+    }
+
+    .img__skill {
+        width: 15%;
     }
 
     .work__item img {

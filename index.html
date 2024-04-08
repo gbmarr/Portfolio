@@ -15,17 +15,30 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header__container">
-        <!-- container del header mobile -->
-        <div class="header__container__title">
-            <h1 class="header__title">Gabriel Marrero - Portfolio</h1>
-            <article class="header__article">[ Fullstack Developer | C# .NET ]</article>
+    <header>
+        <div class="header__container">
+            <!-- container del header mobile -->
+            <div class="header__container__title">
+                <h1 class="header__title">Gabriel Marrero - Portfolio</h1>
+                <article class="header__article">[ Fullstack Developer | C# .NET ]</article>
+            </div>
+            <a href="">gab.bmar.05@gmail.com</a>
         </div>
-        <a href="">gab.bmar.05@gmail.com</a>
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a class="navbar__item" href="#hello">Hello</a></li>
+                <li><a class="navbar__item" href="#academic">Formación</a></li>
+                <li><a class="navbar__item" href="#skills">Skills</a></li>
+                <li><a class="navbar__item" href="#work">Proyectos</a></li>
+                <li><a class="navbar__item" href="#aboutme">Sobre mí</a></li>
+                <li><a class="navbar__item" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Main -->
     <main class="main__container">
-        <section class="section__hello">
+        <section id="hello" class="section__hello">
             <div class="section__title">
                 <h2>Hola, soy Gabriel Marrero, desarrollador de aplicaciones web</h2>
                 <img src="images/code_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -34,14 +47,14 @@
             <article>Además, estoy participando en el proyecto Oracle ONE en Alura Latam.</article>
             <div class="section__hello__networks">
                 <ul>
-                    <li><a href="https://github.com/gbmarr">Github</a></li>
-                    <li><a href="www.linkedin.com/in/gabrielmarrerok">Linkedin</a></li>
-                    <li><a href="https://www.instagram.com/gabmarre/">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/posts/gabrielmarrerok_cv-gabriel-marrero-activity-7165879792175640576-j9vT?utm_source=share&utm_medium=member_desktop">Currículum</a></li>
+                    <li><a target="_blank" href="https://github.com/gbmarr">Github</a></li>
+                    <li><a target="_blank" href="www.linkedin.com/in/gabrielmarrerok">Linkedin</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/gabmarre/">Instagram</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/posts/gabrielmarrerok_cv-gabriel-marrero-activity-7165879792175640576-j9vT?utm_source=share&utm_medium=member_desktop">Currículum</a></li>
                 </ul>
             </div>
         </section>
-        <section class="section__academic">
+        <section id="academic" class="section__academic">
             <div class="section__title">
                 <h2>Formación académica</h2>
                 <img src="images/school_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -54,7 +67,7 @@
                 <article class="academic__item__date">Abril, 2024</article>
                 <div>
                     <!-- falta certificado Nivel 3 -->
-                    <a class="academic__item__link" href="">
+                    <a target="_blank" class="academic__item__link" href="">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
@@ -66,7 +79,7 @@
                 <article>Desarrollo de aplicaciones de escritorio con C# y el ecosistema .NET.</article>
                 <article class="academic__item__date">Febrero, 2024</article>
                 <div>
-                    <a class="academic__item__link" href="https://www.linkedin.com/in/gabrielmarrerok/overlay/education/960130167/multiple-media-viewer/?profileId=ACoAAD3q7PIBtEz3KCf0Yh0UXnC9G7UQNKqj9G8&treasuryMediaId=1708637699353">
+                    <a target="_blank" class="academic__item__link" href="https://www.linkedin.com/in/gabrielmarrerok/overlay/education/960130167/multiple-media-viewer/?profileId=ACoAAD3q7PIBtEz3KCf0Yh0UXnC9G7UQNKqj9G8&treasuryMediaId=1708637699353">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
@@ -78,7 +91,7 @@
                 <article>Aprendizaje de lógica de programación utilzando el lenguaje de programación JavaScript.</article>
                 <article class="academic__item__date">Enero, 2024</article>
                 <div>
-                    <a class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-programacion-primeros-pasos-15697/certificate">
+                    <a target="_blank" class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-programacion-primeros-pasos-15697/certificate">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
@@ -90,7 +103,7 @@
                 <article>Capacitación destinada al aprendizaje de lógica de programación.</article>
                 <article class="academic__item__date">Enero, 2024</article>
                 <div>
-                    <a class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-programacion-primeros-pasos-grupo6-one-15702/certificate">
+                    <a target="_blank" class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-programacion-primeros-pasos-grupo6-one-15702/certificate">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
@@ -102,7 +115,7 @@
                 <article>Serie de cursos destinados al desarrollo de soft skills o habilidades blandas para la optimización del desempeño en el ámbito profesional.</article>
                 <article class="academic__item__date">Marzo, 2024</article>
                 <div>
-                    <a class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-desarrollo-personal-grupo6-one-15703/certificate">
+                    <a target="_blank" class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-desarrollo-personal-grupo6-one-15703/certificate">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
@@ -114,7 +127,7 @@
                 <article>Guía de aprendizaje para mejorar la relación con las expectativas profesionales, el manejo de los esfuerzos y las demandas del mercado.</article>
                 <article class="academic__item__date">Marzo, 2024</article>
                 <div>
-                    <a class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-mi-carrera-15688/certificate">
+                    <a target="_blank" class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-mi-carrera-15688/certificate">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
@@ -126,13 +139,13 @@
                 <article>Guía de aprendizaje para la optimización de la relación con las expectativas profesionales, demandas de mercado, manipulación de tareas y demás.</article>
                 <article class="academic__item__date">Marzo, 2024</article>
                 <div>
-                    <a class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-emprendimiento-agilidad-y-protagonismo-profesional-grupo6-one-15718/certificate">
+                    <a target="_blank" class="academic__item__link" href="https://app.aluracursos.com/user/gab-bmar-05/degree-emprendimiento-agilidad-y-protagonismo-profesional-grupo6-one-15718/certificate">
                         <img src="images/task_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">Certificado
                     </a>
                 </div>
             </div>
         </section>
-        <section class="section__skills">
+        <section id="skills" class="section__skills">
             <div class="section__title">
                 <h2>Skills</h2>
                 <img src="images/star_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -172,9 +185,9 @@
                 </div>
             </div>
         </section>
-        <section class="section__work">
+        <section id="work" class="section__work">
             <div class="section__title">
-                <h2>Experiencia laboral</h2>
+                <h2>Proyectos</h2>
                 <img src="images/developer_board_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </div>
             <div class="work__item">
@@ -185,8 +198,8 @@
                 <article>Contiene funcionalidad de registro y logueo de usuario; creación, modificación, eliminación y lectura en formato cards y formato listado de artículos; búsqueda de artículos por diferentes criterios.</article>
                 <article>Persistencia de datos mediante base de datos SQL (SQL SERVER), utilizando el conjunto de clases ADO.NET.</article>
                 <div class="work__item__containerbtn">
-                    <a class="work__item__btn" href="https://github.com/gbmarr/TPFinalNivel3MarreroGabriel">Repositorio</a>
-                    <a class="work__item__btn demo" href="http://stockproduct.somee.com/">Demo</a>
+                    <a target="_blank" class="work__item__btn" href="https://github.com/gbmarr/TPFinalNivel3MarreroGabriel">Repositorio</a>
+                    <a target="_blank" class="work__item__btn demo" href="http://stockproduct.somee.com/">Demo</a>
                 </div>
             </div>
             <div class="work__item">
@@ -197,7 +210,7 @@
                 <article>La aplicación brinda la funcionalidad de manipular un stock de productos, pudiendo realizar lectura de los mismos como registros de una lista y mostrando diferentes datos. Además, contiene la funcionalidad de creación, modificación y eliminación de artículos a través de diferentes ventanas creadas en el framework .NET.</article>
                 <article>La persistencia de datos se realiza a través de una base de datos SQL (SQL SERVER), utilizando el conjunto de clases ADO.NET.</article>
                 <div class="work__item__containerbtn">
-                    <a class="work__item__btn" href="https://github.com/gbmarr/TPFinalNivel2_Marrero">Repositorio</a>
+                    <a target="_blank" class="work__item__btn" href="https://github.com/gbmarr/TPFinalNivel2_Marrero">Repositorio</a>
                 </div>
             </div>
             <div class="work__item">
@@ -206,8 +219,8 @@
                 <h3 class="work__item__title">Cards Expandibles</h3>
                 <article>Muestra de imágenes realizada con HTML, CSS y JavaScript en formato cards, que tiene la funcionalidad de expandir aquella imagen sobre la cual se hace "clic" y reducir el tamaño de las imágenes restantes.</article>
                 <div class="work__item__containerbtn">
-                    <a class="work__item__btn" href="https://github.com/gbmarr/Expanding-Cards">Repositorio</a>
-                    <a class="work__item__btn demo" href="https://gbmarr.github.io/Expanding-Cards/">Demo</a>
+                    <a target="_blank" class="work__item__btn" href="https://github.com/gbmarr/Expanding-Cards">Repositorio</a>
+                    <a target="_blank" class="work__item__btn demo" href="https://gbmarr.github.io/Expanding-Cards/">Demo</a>
                 </div>
             </div>
             <div class="work__item">
@@ -216,12 +229,12 @@
                 <h3 class="work__item__title">Password Blurring Background</h3>
                 <article>Formulario de login que posee la funcionalidad de quitar dinámicamente el filtro "blur" del background a medida que el usuario agrega caracteres dentro del campo "password".</article>
                 <div class="work__item__containerbtn">
-                    <a class="work__item__btn" href="https://github.com/gbmarr/Password-Blurring-Background">Repositorio</a>
-                    <a class="work__item__btn demo" href="https://gbmarr.github.io/Password-Blurring-Background/">Demo</a>
+                    <a target="_blank" class="work__item__btn" href="https://github.com/gbmarr/Password-Blurring-Background">Repositorio</a>
+                    <a target="_blank" class="work__item__btn demo" href="https://gbmarr.github.io/Password-Blurring-Background/">Demo</a>
                 </div>
             </div>
         </section>
-        <section class="section__aboutme">
+        <section id="aboutme" class="section__aboutme">
             <div class="section__title">
                 <h2>Sobre mí</h2>
                 <img src="images/ar_on_you_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -237,7 +250,7 @@
                 Como profesional me destaco por mitenacidad, mi enfoque, mi simplicidad y concisión. Además, busco convertirme en un referente, no solo por mis habilidades técnicas, sino también por mi capacidad para guiar y motivar a otros pares. Mi visión incluye desplegar proyectos que no solo me brinden éxito laboral, sino también cierto reconocimiento en la industria.
             </article>
         </section>
-        <section class="section__contact">
+        <section id="contact" class="section__contact">
             <div class="section__title">
                 <h2>Contacto</h2>
                 <img src="images/public_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -266,7 +279,10 @@
             </form>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <p>Diseñado por</p>
+        <p id="footer__author">Gabriel Marrero</p>
+    </footer>
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
 </body>
