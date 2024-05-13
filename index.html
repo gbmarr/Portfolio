@@ -255,35 +255,31 @@
                 <h2>Contacto</h2>
                 <img src="images/public_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </div>
-            <form action="dataset.php" method="POST">
-                <div class="form__container">
-                    <article>Si estás interesado/a en mi trabajo o ante cualquier consulta, completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</article>
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input name="nombre" type="text">
-                    </div>
-                    <div>
-                        <label for="apellido">Apellido:</label>
-                        <input for="apellido" type="text">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input for="email" type="email">
-                    </div>
-                    <div>
-                        <label for="asunto">Consulta:</label>
-                        <input for="asunto" type="text" maxlength="350">
-                    </div>
-                    <button class="form__btn" disabled>Enviar</button>
+            <div class="section__contact__container">
+                <div class="contact__img__container">
+                    <!-- WHATSAPP -->
+                    <a target="_blank" href="https://wa.me/+5492262339680">
+                        <img class="contact__img" src="/images/bxl-whatsapp.svg" />
+                    </a>
                 </div>
-            </form>
+                <div class="contact__img__container">
+                    <!-- EMAIL -->
+                    <a target="_blank" href="mailto:gab.bmar.05@gmail.com">
+                        <img class="contact__img" src="/images/bxl-gmail.svg" />
+                    </a>
+                </div>
+                <div class="contact__img__container">
+                    <!-- INSTAGRAM -->
+                    <a target="_blank" href="https://www.instagram.com/direct/t/115793749814157/">
+                        <img class="contact__img" src="/images/bxl-instagram.svg" />
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <p>Diseñado por</p>
         <p id="footer__author">Gabriel Marrero</p>
     </footer>
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
 </body>
 </html>
