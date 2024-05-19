@@ -21,10 +21,14 @@
     height: fit-content;
     font: 12px "Raleway", sans-serif;
     text-decoration: none;
-    color: var(--oxford-blue);
-    background-color: var(--platinum);
+    color: var(--black);
+    background-color: transparent;
     scroll-behavior: smooth;
     list-style: none;
+}
+
+body {
+    background: linear-gradient(var(--platinum) 70%, var(--oxford-blue), var(--black));
 }
 
 section {
@@ -35,9 +39,15 @@ h2 {
     font: bold 1.5em 'Rajdhani', sans-serif;
 }
 
+h2 + img {
+    width: 4%;
+    filter: drop-shadow(0px 0px 3px var(--white));
+}
+
 /* ESTILOS DEL HEADER */
 .header__container {
-    background-color: var(--oxford-blue);
+    background: linear-gradient(var(--oxford-blue), var(--black));
+    filter: drop-shadow(0px 0px 10px var(--black));
     padding: 1em 0;
     display: flex;
     justify-content: space-around;
@@ -87,11 +97,6 @@ h2 {
     font-weight: bold;
 }
 
-/* ESTILOS DEL SECTION ABOUT ME */
-.section__aboutme article {
-    margin: 1em;
-}
-
 /* ESTILOS DEL SECTION SKILLS */
 .section__skills__container, .section__contact__container {
     margin: auto;
@@ -108,6 +113,10 @@ h2 {
     width: 25%;
 }
 
+.img__skill {
+    filter: drop-shadow(0px 0px 10px var(--black));
+}
+
 /* ESTILOS DEL SECTION FORMACION ACADEMICA */
 .academic__item {
     margin: 1em;
@@ -119,6 +128,7 @@ h2 {
     margin: .5em 0;
     width: 60%;
     border-radius: 4px;
+    filter: drop-shadow(0px 0px 1px var(--black));
 }
 
 .academic__item__title {
@@ -146,7 +156,6 @@ h2 {
 .work__item {
     margin: 1em;
     padding: 1em;
-    border-left: 1px solid var(--oxford-blue);
 }
 
 .work__item img {
@@ -186,19 +195,39 @@ h2 {
     color: var(--orange-web);
 }
 
+.work__item:nth-child(4) h3, .work__item:nth-child(4) article,
+.work__item:nth-child(5) h3, .work__item:nth-child(5) article {
+    color: var(--white);
+}
+
+/* ESTILOS DEL SECTION ABOUTME */
+#aboutme h2, #aboutme article {
+    color: var(--white);
+}
+
+.section__aboutme article {
+    margin: 1em;
+}
+
+
 /* ESTILOS DEL SECTION CONTACT */
+#contact h2{
+    color: var(--white);
+}
+
 .contact__img__container {
     width: 30%;
     text-align: center;
 }
 
 .contact__img {
+    filter: drop-shadow(0px 0px 2px var(--orange-web));
     width: 40%;
 }
 
 /* ESTILO DEL FOOTER */
 .footer {
-    background: linear-gradient(var(--oxford-blue), var(--black));
+    background: linear-gradient(var(--black), var(--oxford-blue));
     display: flex;
     justify-content: center;
     padding: 1em;
