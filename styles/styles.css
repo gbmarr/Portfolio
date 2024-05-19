@@ -46,12 +46,13 @@ h2 + img {
 
 /* ESTILOS DEL HEADER */
 .header__container {
-    background: linear-gradient(var(--oxford-blue), var(--black));
-    filter: drop-shadow(0px 0px 10px var(--black));
+    width: 100%;
     padding: 1em 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: linear-gradient(var(--oxford-blue), var(--black));
+    filter: drop-shadow(0px 0px 10px var(--black));
 }
 
 .header__container__title {
@@ -71,6 +72,10 @@ h2 + img {
 }
 
 /* ESTILOS DEL SECTION HELLO */
+.section__hello {
+    animation: showsections 3s both;
+}
+
 .section__title {
     display: flex;
     justify-content: space-between;
@@ -98,6 +103,12 @@ h2 + img {
 }
 
 /* ESTILOS DEL SECTION SKILLS */
+.section__skills {
+    animation: showsections both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
 .section__skills__container, .section__contact__container {
     margin: auto;
     display: flex;
@@ -122,6 +133,9 @@ h2 + img {
     margin: 1em;
     padding: 1em;
     border-bottom: 1px solid var(--orange-web);
+    animation: showsections both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
 }
 
 .academic__item__img {
@@ -156,6 +170,9 @@ h2 + img {
 .work__item {
     margin: 1em;
     padding: 1em;
+    animation: showsections both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
 }
 
 .work__item img {
@@ -201,6 +218,12 @@ h2 + img {
 }
 
 /* ESTILOS DEL SECTION ABOUTME */
+.section__aboutme {
+    animation: showsections both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
 #aboutme h2, #aboutme article {
     color: var(--white);
 }
@@ -211,6 +234,12 @@ h2 + img {
 
 
 /* ESTILOS DEL SECTION CONTACT */
+.section__contact {
+    animation: showsections both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
 #contact h2{
     color: var(--white);
 }
@@ -242,6 +271,35 @@ h2 + img {
 #footer__author {
     color: var(--orange-web);
     font-style: italic;
+}
+
+/* ESTILOS DE PSEUDOCLASES */
+.navbar__item:hover {
+    color: var(--oxford-blue);
+    filter: drop-shadow(0px 0px 2px var(--black));
+    transition: all .5s ease-in;
+}
+
+.section__hello__networks ul a:hover {
+    color: var(--platinum);
+    filter: drop-shadow(0px 0px 5px var(--black));
+    transition: all .5s;
+}
+
+.academic__item__link:hover, .academic__item__link img:hover {
+    filter: drop-shadow(0px 0px 3px var(--oxford-blue));
+    color: var(--oxford-blue);
+    transition: all .5s;
+}
+
+.work__item__btn:hover {
+    margin: 0 1em;
+    transition: all .8s ease-in-out;
+}
+
+.contact__img:hover {
+    filter: drop-shadow(0px 0px 10px var(--orange-web));
+    transition: all .5s;
 }
 
 /* MEDIA QUERIES */
@@ -320,5 +378,15 @@ h2 + img {
 
     .work__item img {
         width: 50%;
+    }
+}
+
+/* ANIMACIONES */
+@keyframes showsections {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
