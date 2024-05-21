@@ -237,7 +237,7 @@ h2 + img {
 .section__contact {
     animation: showsections both;
     animation-timeline: view();
-    animation-range: cover 0% cover 40%;
+    animation-range: cover 0% cover 10%;
 }
 
 #contact h2{
