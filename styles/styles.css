@@ -384,9 +384,11 @@ h2 + img {
 /* ANIMACIONES */
 @keyframes showsections {
     from{
+        filter: blur(5px);
         opacity: 0;
     }
     to{
+        filter: none;
         opacity: 1;
     }
 }
