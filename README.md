@@ -1,5 +1,5 @@
 # Portfolio Personal
-Este es mi portfolio personal, desarrollado utilizando HTML, CSS y JavaScript. Presenta una variedad de secciones que destacan mi experiencia, habilidades y proyectos.
+Este es mi antiguo portfolio personal, desarrollado utilizando HTML, CSS y JavaScript. Presenta una variedad de secciones que destacan mi experiencia, habilidades y proyectos. Actualmente existe un nuevo portfolio que está en proceso de desarrollo utilizando React, ¡Muy pronto lo estaré compartiendo!
 
 # Características Principales
 
